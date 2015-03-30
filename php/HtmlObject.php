@@ -15,7 +15,7 @@ abstract class HtmlObject implements iHtmlObject
 	/**
 	 * @var string template to use
 	 */
-	protected $template = 'formTemplate';
+	protected $template = 'formTableTemplate';
 	
 	public function __construct()
 	{

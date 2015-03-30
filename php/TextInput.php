@@ -4,7 +4,7 @@
  * @author Jan Kudlacek
  *
  */
-class TextInput extends HtmlObject {
+class TextInput extends HtmlObject implements iInput {
 	
 	protected $template = 'inputTableTemplate';
 	private $label;

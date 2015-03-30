@@ -8,6 +8,7 @@ class FormObject extends HtmlObject {
 
 	const INPUT_TEXT = 'TextInput';
 	const INPUT_TEXTAREA = 'TextAreaInput';
+	const INPUT_SUBMIT = 'SubmitInput';
 
 	/**
 	 * filename of template

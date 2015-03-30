@@ -53,6 +53,8 @@ $form->addInput('Description',FormObject::INPUT_TEXTAREA)
 ->setAttr('class','TinyMce')
 ->setAttr('style','width:100%');
 
+$form->addInput('Odeslat', FormObject::INPUT_SUBMIT);
+
 echo $form;
 ```
 
