@@ -3,6 +3,8 @@ Php class for simple form creation. Super easy to use, see usage.
 
 #Usage
 
+Keep file structure and include bootstrap.php to your project.
+
 First of, create your instance of FormObject
 
 ```php
@@ -25,4 +27,33 @@ $form->addInput('User Name')
 ->setAttr('placeholder','Write your name here!');
 ```
 
-As you can see
+This code returns following output
+![alt tag](http://s17.postimg.org/4fqptyecv/input.gif)
+
+#Example
+
+```php
+$form = new FormObject();
+
+$form->setAttr('method', 'GET');
+
+$form->addInput('Your name:')
+->setAttr('name','userName')
+->setAttr('placeholder','Write your name here');
+
+$form->addInput('Your Surename:')
+->setAttr('name','surename')
+->setAttr('class','a b c');
+
+$form->addInput('Age:')
+->setAttr('name','age')
+->setAttr('type','number');
+
+$form->addInput('Description',FormObject::INPUT_TEXTAREA)
+->setAttr('class','TinyMce')
+->setAttr('style','width:100%');
+
+echo $form;
+```
+
+Normaly you would not echo form in here, but in your template. This is just for our example.
